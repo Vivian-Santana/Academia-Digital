@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
-//@Data
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class MatriculaForm {
@@ -16,12 +16,4 @@ public class MatriculaForm {
   @Positive(message = "O Id do aluno precisa ser positivo.")//ID NÃO PODE SER NUM. NEGATIVO.
   private Long alunoId;
 
-	public Long getAlunoId() {
-		return alunoId;
-	}
-
-	public void setAlunoId(Long alunoId) {
-		this.alunoId = alunoId;
-	}
-  
 }

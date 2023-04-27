@@ -9,7 +9,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-//@Data 
+@Data 
 @NoArgsConstructor 
 @AllArgsConstructor
 @Entity
@@ -26,34 +26,4 @@ public class Matricula {
 
   private LocalDateTime dataDaMatricula = LocalDateTime.now();
 
-  
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public Aluno getAluno() {
-		return aluno;
-	}
-
-	public void setAluno(Aluno aluno) {
-		this.aluno = aluno;
-	}
-
-	public LocalDateTime getDataDaMatricula() {
-		return dataDaMatricula;
-	}
-
-	public void setDataDaMatricula(LocalDateTime dataDaMatricula) {
-		this.dataDaMatricula = dataDaMatricula;
-	}
-
-	@Override
-	public String toString() {
-		return "Matricula [id=" + id + ", aluno=" + aluno + ", dataDaMatricula=" + dataDaMatricula + "]";
-	}
-  
 }
